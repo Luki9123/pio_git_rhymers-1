@@ -5,10 +5,12 @@ import org.junit.Test;
 
 public class RhymersJUnitTest {
 
+	public static final int testValue=4;
+
+
 	@Test
 	public void testCountIn() {
 		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-		int testValue = 4;
 		rhymer.countIn(testValue);
 
 		int result = rhymer.isEmpty();
@@ -49,7 +51,6 @@ public class RhymersJUnitTest {
 		int result = rhymer.isEmpty();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = 4;
 		rhymer.countIn(testValue);
 
 		result = rhymer.isEmpty();
@@ -66,7 +67,6 @@ public class RhymersJUnitTest {
 		int result = rhymer.countOut();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = 4;
 		rhymer.countIn(testValue);
 
 		result = rhymer.countOut();
