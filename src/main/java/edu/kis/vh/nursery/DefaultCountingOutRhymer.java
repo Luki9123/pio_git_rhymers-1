@@ -33,4 +33,11 @@ public class DefaultCountingOutRhymer {
 		return numbers[total--];
 	}
 
+	public int howMany() {
+		if(callCheck())
+		{
+			return -1;
+		}
+		return numbers[total];
+	}
 }
