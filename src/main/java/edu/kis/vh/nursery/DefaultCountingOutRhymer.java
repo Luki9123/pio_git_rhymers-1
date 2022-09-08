@@ -5,7 +5,7 @@ public class DefaultCountingOutRhymer {
 	public static final int MAX_CAPACITY = 12;
 	public static final int EMPTY = -1;
 	public static final int ERROR = -1;
-	public static final int MAX_INDEX = 11;
+	public static final int MAX_INDEX = MAX_CAPACITY-1;
 	private final int[] numbers = new int[MAX_CAPACITY];
 
 	private int total = EMPTY;
